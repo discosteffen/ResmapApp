@@ -59,20 +59,21 @@ public class MainActivity extends AppCompatActivity {
         key="-82.5"; // this needs to be the gps cords. can be string or value
         lat="27.53";
 
-        url ="http://cloud.sofwerx.org:43110/1P1RFkC5zJwvvM3Gt7r4myaYStjr23mH9q/"; // set to zeroNet url on record.
+//        url ="http://cloud.sofwerx.org:43110/1P1RFkC5zJwvvM3Gt7r4myaYStjr23mH9q/"; // set to zeroNet url on record.
 //        url ="http://127.0.0.1:43110/1P1RFkC5zJwvvM3Gt7r4myaYStjr23mH9q/"; // local zeronet url. record.
 
 //        url ="http://cloud.sofwerx.org:43110/1CyX49a6rLzzVqzKd5PkHCEhJi5bNAk7g"; // zerochat page.
 //        url ="http://127.0.0.1:43110/1CyX49a6rLzzVqzKd5PkHCEhJi5bNAk7g"; // zerochat page.
 
-//        url ="http://cloud.sofwerx.org:43110/1JRNaphiQJKr4h3x7yXxFs6kSmbDRwPpRy"; // updated clone page.
+        url ="http://cloud.sofwerx.org:43110/1JRNaphiQJKr4h3x7yXxFs6kSmbDRwPpRy"; // updated clone page.
 
 
-
+// getters for lat and long to send to server
         stringGetter = new StringGetter(this);
         stringGetter2 = new StringGetter(this);
 
 
+// gps / network data
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         longitudeValueBest = (TextView) findViewById(R.id.longitudeValueBest);
@@ -332,11 +333,11 @@ public class MainActivity extends AppCompatActivity {
 
 /*
 *
-* 1. Add layout w buttons for GPS. /
+* 1. Add layout w buttons for GPS. ---
 *
-* 2. Test webView with static variables.
+* 2. Test webView with static variables. ---
 *
-* 3. Test Activate GPS
+* 3. Test Activate GPS ---
 *
 * 4. Set static vars to GPS variables
 *
